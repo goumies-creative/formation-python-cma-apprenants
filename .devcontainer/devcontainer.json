@@ -1,0 +1,47 @@
+{
+    "name": "Cours Python - Mairie de Paris SCAP",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "formulahendry.auto-rename-tag",
+                "ecmel.vscode-html-css",
+                "github.copilot-chat",
+                "usernamehw.errorlens",
+                "oderwat.indent-rainbow"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "editor.fontSize": 14,
+                "editor.wordWrap": "on",
+                "editor.minimap.enabled": false,
+                "files.autoSave": "afterDelay"
+            }
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt && python TEST-ENVIRONNEMENT.py",
+    "portsAttributes": {
+        "5000": {
+            "label": "Application Flask",
+            "onAutoForward": "notify"
+        },
+        "8000": {
+            "label": "Application Django",
+            "onAutoForward": "notify"
+        },
+        "8888": {
+            "label": "Jupyter Notebook",
+            "onAutoForward": "notify"
+        }
+    },
+    "forwardPorts": [5000, 8000, 8888]
+}

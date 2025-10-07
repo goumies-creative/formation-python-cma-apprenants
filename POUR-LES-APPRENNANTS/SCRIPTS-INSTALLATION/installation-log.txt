@@ -1,0 +1,16 @@
+[2025-10-07 00:29:37] [INFO] Début de l'installation
+[2025-10-07 00:29:38] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:34:20] [INFO] Début de l'installation
+[2025-10-07 00:34:20] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:35:48] [INFO] Début de l'installation
+[2025-10-07 00:35:48] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:36:23] [INFO] Début de l'installation
+[2025-10-07 00:36:23] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:37:37] [INFO] Début de l'installation
+[2025-10-07 00:37:37] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:40:29] [INFO] Début de l'installation
+[2025-10-07 00:40:29] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:41:44] [INFO] Début de l'installation
+[2025-10-07 00:41:44] [WARN] ATTENTION: Script exécuté sans droits administrateur
+[2025-10-07 00:43:00] [INFO] Début de l'installation
+[2025-10-07 00:43:00] [WARN] ATTENTION: Script exécuté sans droits administrateur

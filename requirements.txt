@@ -1,0 +1,28 @@
+# === FORMATION PYTHON CMA - Packages ===
+# Dernière mise à jour : Octobre 2025
+
+# 🐍 CORE PYTHON & DÉVELOPPEMENT
+python-dotenv==1.0.0        # Variables environnement (Séance 11-12)
+black==23.7.0               # Formatage code automatique
+pytest==7.4.0               # Tests unitaires (Séance 7)
+python-dateutil==2.8.2      # Manipulation dates
+
+# DONNÉES & ANALYSE (Séances 9-10)
+pandas==2.0.3               # Manipulation données (CSV, analyse)
+numpy==1.24.3               # Calculs scientifiques
+matplotlib==3.7.1           # Visualisation données
+jupyter==1.0.0              # Notebooks interactifs
+
+# WEB & APIS (Séances 11-12, 14-15)
+flask==2.3.2                # Framework web (Séances 14-15)
+requests==2.31.0            # APIs REST (Séance 11)
+beautifulsoup4==4.12.2      # Web scraping (bonus)
+
+# BASES DE DONNÉES (Séance 13)
+sqlalchemy==2.0.20          # ORM bases de données
+psycopg2-binary==2.9.7      # Connecteur PostgreSQL
+
+# COMMUNICATION (Séance 12)
+tweepy==4.14.0              # API Twitter (optionnel)
+
+# Installation : pip install -r requirements.txt

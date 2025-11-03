@@ -26,6 +26,18 @@
 
 ---
 
+## 🆕 Nouveautés - Séances 4 à 6 Disponibles !
+
+Les séances sur la **Programmation Orientée Objet (POO)** et les **Modules** sont maintenant disponibles ! 🎉
+
+- **Séance 4** : Introduction POO (Classes, Objets, Méthodes)
+- **Séance 5** : POO Avancée (Héritage, Polymorphisme, Properties)
+- **Séance 6** : Librairies et Modules Python
+
+**📥 Pour mettre à jour votre espace de cours** : Consultez [COMMENT-METTRE-A-JOUR.md](COMMENT-METTRE-A-JOUR.md)
+
+---
+
 ## Démarrage Rapide
 
 ### Option 1 : GitHub Codespaces (Recommandé - Zero Install)

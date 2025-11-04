@@ -54,7 +54,7 @@ def calculer_reduction(montant_achat, est_membre, jour_semaine, heure_achat):
     return reduction, raison
 
 def main():
-    print("���️  CALCULATEUR DE RÉDUCTIONS MULTICRITÈRES")
+    print("CALCULATEUR DE RÉDUCTIONS MULTICRITÈRES")
     print("=" * 55)
     
     try:
@@ -79,7 +79,7 @@ def main():
         economie = montant - montant_reduit
         
         # Affichage détaillé
-        print("\n" + "��� DÉTAIL DE LA COMMANDE".center(55, "="))
+        print("\n" + "��� DÉTAIL DE LA COMMANDE".center(55, "="))
         print(f"Montant initial : {montant:.2f}€")
         print(f"Réduction appliquée : {reduction*100:.1f}%")
         print(f"Motif : {raison}")
@@ -87,7 +87,7 @@ def main():
         print(f"Montant final : {montant_reduit:.2f}€")
         
         # Informations supplémentaires
-        print("\n" + "��� CONDITIONS DE RÉDUCTION".center(55, "-"))
+        print("\n" + "��� CONDITIONS DE RÉDUCTION".center(55, "-"))
         print("• Achat > 50€ : 5% de réduction")
         print("• Achat > 100€ : 10% de réduction")
         print("• Achat > 200€ : 20% de réduction")

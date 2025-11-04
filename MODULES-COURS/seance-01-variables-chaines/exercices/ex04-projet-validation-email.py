@@ -52,7 +52,7 @@ def valider_email(email):
 
 # Programme principal
 def main():
-    print("Ì¥ç VALIDATEUR D'ADRESSE EMAIL")
+    print("VALIDATEUR D'ADRESSE EMAIL")
     print("=" * 40)
     
     while True:
@@ -73,9 +73,9 @@ def main():
             nom_utilisateur = email.split("@")[0]
             domaine = email.split("@")[1]
             
-            print(f"   Ì±§ Nom d'utilisateur : {nom_utilisateur}")
-            print(f"   Ìºê Domaine : {domaine}")
-            print(f"   Ì≥ß Email complet : {email}")
+            print(f"   Nom d'utilisateur : {nom_utilisateur}")
+            print(f"   Domaine : {domaine}")
+            print(f"   Email complet : {email}")
             
         else:
             print(f"‚ùå {message}")

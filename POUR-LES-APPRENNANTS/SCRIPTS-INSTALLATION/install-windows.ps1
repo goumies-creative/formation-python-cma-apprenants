@@ -94,7 +94,7 @@ Write-Log "winget disponible" "SUCCESS"
 # Installation de Python
 Write-Log "Installation de Python 3.11..."
 try {
-    Write-ColorOutput "`n��� Installation de Python 3.11..." "Cyan"
+    Write-ColorOutput "`nInstallation de Python 3.11..." "Cyan"
     $pythonResult = winget install --id Python.Python.3.11 --exact --accept-package-agreements --source winget --disable-interactivity
     if ($LASTEXITCODE -eq 0) {
         Write-Log "Python installé avec succès" "SUCCESS"
@@ -113,7 +113,7 @@ try {
 # Installation de Git
 Write-Log "Installation de Git..."
 try {
-    Write-ColorOutput "`n��� Installation de Git..." "Cyan"
+    Write-ColorOutput "`nInstallation de Git..." "Cyan"
     $gitResult = winget install --id Git.Git --exact --accept-package-agreements --source winget --disable-interactivity
     if ($LASTEXITCODE -eq 0) {
         Write-Log "Git installé avec succès" "SUCCESS"
@@ -132,7 +132,7 @@ try {
 # Installation de VS Code
 Write-Log "Installation de Visual Studio Code..."
 try {
-    Write-ColorOutput "`n��� Installation de Visual Studio Code..." "Cyan"
+    Write-ColorOutput "`nInstallation de Visual Studio Code..." "Cyan"
     $vscodeResult = winget install --id Microsoft.VisualStudioCode --exact --accept-package-agreements --source winget --disable-interactivity
     if ($LASTEXITCODE -eq 0) {
         Write-Log "VS Code installé avec succès" "SUCCESS"
@@ -172,7 +172,7 @@ try {
 # Installation des extensions VS Code
 Write-Log "Installation des extensions VS Code..."
 try {
-    Write-ColorOutput "`n��� Installation des extensions VS Code..." "Cyan"
+    Write-ColorOutput "`nInstallation des extensions VS Code..." "Cyan"
     
     # Attendre que VS Code soit disponible
     Show-WaitAnimation -Seconds 5
@@ -205,7 +205,7 @@ try {
 # Installation des packages Python
 Write-Log "Installation des packages Python..."
 try {
-    Write-ColorOutput "`n��� Installation des packages Python..." "Cyan"
+    Write-ColorOutput "`nInstallation des packages Python..." "Cyan"
     
     # Vérifier que Python est dans le PATH
     $pythonPath = where.exe python 2>$null
@@ -257,7 +257,7 @@ try {
 
 # Vérification finale
 Write-Log "Vérification finale de l'installation..."
-Write-ColorOutput "`n��� Vérification finale..." "Cyan"
+Write-ColorOutput "`nVérification finale..." "Cyan"
 
 $checks = @(
     @{Name = "Python"; Command = "python --version"},
@@ -285,7 +285,7 @@ foreach ($check in $checks) {
 Write-ColorOutput "`n" "White"
 Write-ColorOutput "=============================================" "Cyan"
 if ($allSuccess) {
-    Write-ColorOutput "��� INSTALLATION RÉUSSIE !" "Green"
+    Write-ColorOutput "INSTALLATION RÉUSSIE !" "Green"
     Write-ColorOutput "Tous les outils sont installés et configurés." "Green"
     Write-Log "Installation terminée avec succès" "SUCCESS"
 } else {

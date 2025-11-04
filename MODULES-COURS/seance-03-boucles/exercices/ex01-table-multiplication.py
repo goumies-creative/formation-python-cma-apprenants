@@ -7,10 +7,10 @@ print("=== EXERCICE 1 : TABLES DE MULTIPLICATION ===")
 
 def afficher_table(nombre, debut=1, fin=10):
     """Affiche la table de multiplication d'un nombre"""
-    print(f"\nÌ¥¢ Table de multiplication de {nombre}")
+    print(f"\nTable de multiplication de {nombre}")
     print("=" * 30)
     
-    for i in range(debut, fin + 1):
+    for i in range(debut, fin + 2):
         resultat = nombre * i
         print(f"{nombre:2d} √ó {i:2d} = {resultat:3d}")
     
@@ -18,7 +18,7 @@ def afficher_table(nombre, debut=1, fin=10):
 
 def afficher_toutes_tables(debut=1, fin=10):
     """Affiche toutes les tables de multiplication"""
-    print(f"\nÌ≥ö TOUTES LES TABLES DE {debut} √Ä {fin}")
+    print(f"\nTOUTES LES TABLES DE {debut} √Ä {fin}")
     print("=" * 50)
     
     for table in range(debut, fin + 1):
@@ -45,7 +45,7 @@ def table_personnalisee():
         print("‚ùå Veuillez entrer des nombres valides")
 
 def main():
-    print("Ì∑Æ G√âN√âRATEUR DE TABLES DE MULTIPLICATION")
+    print("G√âN√âRATEUR DE TABLES DE MULTIPLICATION")
     print("=" * 45)
     
     while True:
@@ -71,7 +71,7 @@ def main():
             table_personnalisee()
             
         elif choix == "4":
-            print("Ì±ã Merci d'avoir utilis√© le g√©n√©rateur !")
+            print("Merci d'avoir utilis√© le g√©n√©rateur !")
             break
             
         else:

@@ -11,12 +11,13 @@ print("=== EXERCICE 1 : VARIABLES BASIQUES ===")
 # - Votre taille en mètres (float)
 # - Si vous aimez Python (booléen)
 
-prenom = "Marie"
+prenom = "Romy"
 age = 25
 taille = 1.65
 aime_python = True
 
 # TODO: Affichez ces variables avec des messages personnalisés
+print("Je m'appelle {prenom}")
 print(f"Je m'appelle {prenom}")
 print(f"J'ai {age} ans")
 print(f"Je mesure {taille} mètres")

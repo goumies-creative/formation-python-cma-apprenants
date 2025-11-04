@@ -37,7 +37,7 @@ def analyser_imc(imc):
     return categorie, conseil
 
 def main():
-    print("í·® CALCULATEUR D'INDICE DE MASSE CORPORELLE")
+    print("CALCULATEUR D'INDICE DE MASSE CORPORELLE")
     print("=" * 50)
     
     try:
@@ -59,7 +59,7 @@ def main():
         categorie, conseil = analyser_imc(imc)
         
         # Affichage rÃ©sultats
-        print("\n" + "í³Š RÃ‰SULTATS".center(50, "="))
+        print("\n" + "RÃ‰SULTATS".center(50, "="))
         print(f"Poids : {poids} kg")
         print(f"Taille : {taille} m")
         print(f"IMC : {imc:.1f}")
@@ -67,7 +67,7 @@ def main():
         print(f"Conseil : {conseil}")
         
         # DÃ©tails supplÃ©mentaires
-        print("\n" + "í²¡ INFORMATIONS COMPLÃ‰MENTAIRES".center(50, "-"))
+        print("\n" + "INFORMATIONS COMPLÃ‰MENTAIRES".center(50, "-"))
         print("Ã‰chelle IMC :")
         print("- < 18.5 : Maigreur")
         print("- 18.5-25 : Normal")

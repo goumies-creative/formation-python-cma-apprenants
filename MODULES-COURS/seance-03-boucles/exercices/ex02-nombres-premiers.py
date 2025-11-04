@@ -49,7 +49,7 @@ def decomposer_facteurs_premiers(nombre):
     return facteurs
 
 def main():
-    print("Ì¥¢ ANALYSE DES NOMBRES PREMIERS")
+    print("ANALYSE DES NOMBRES PREMIERS")
     print("=" * 40)
     
     while True:
@@ -117,7 +117,7 @@ def main():
                 print("‚ùå Veuillez entrer un nombre valide")
                 
         elif choix == "4":
-            print("Ì±ã Au revoir !")
+            print("Au revoir !")
             break
             
         else:

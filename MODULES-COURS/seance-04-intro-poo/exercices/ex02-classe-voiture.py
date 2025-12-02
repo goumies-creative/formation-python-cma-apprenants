@@ -18,7 +18,33 @@ print("=== EXERCICE 2 : CLASSE VOITURE ===\n")
 
 # Votre code ici :
 class Voiture:
-    pass  # Remplacez pass par votre code
+    def __init__(self, marque, modele, annee):
+        self.marque = marque
+        self.modele = modele
+        self.annee = annee
+        self.km = 0
+        self.en_marche = False
+
+    def demarrer(self):
+        self.en_marche = True
+        print(f"La voiture {self.marque} {self.modele} a démarré.")
+
+    def arreter(self):
+        self.en_marche = False
+        print(f"La voiture {self.marque} {self.modele} est arrêtée.")
+
+    def rouler(self, distance):
+        if self.en_marche:
+            self.km += distance
+            print(f"La voiture {self.marque} {self.modele} a roulé {distance} km.")
+        else:
+            print(f"La voiture {self.marque} {self.modele} ne peut pas rouler car elle est arrêtée.")
+
+    def afficher_info(self):
+        print(f"Voiture : {self}")
+
+    def __str__(self):
+        return f"{self.marque} {self.modele} ({self.annee}) - {self.km} km - En marche: {self.en_marche}"
 
 
 # Tests

@@ -9,6 +9,7 @@ print("=== EXERCICE 3 : COMPTE BANCAIRE AVEC PROPERTIES ===\n")
 # - Attribut _solde (protégé, commence par _)
 # - Attribut _taux_interet (protégé)
 # - Méthode __init__(solde_initial, taux_interet)
+# - Constructeur alternatif avec @classmethod
 #
 # - @property solde (getter) qui retourne self._solde
 # - @solde.setter qui :
@@ -30,7 +31,53 @@ print("=== EXERCICE 3 : COMPTE BANCAIRE AVEC PROPERTIES ===\n")
 # - Méthode __str__()
 
 # Votre code ici :
+class CompteBancaire:
+    def __init__(self, solde_initial, taux_interet):
+        self._solde = 0
+        self._taux_interet = 0
+        self.solde = solde_initial  # Utilise le setter
+        self.taux_interet = taux_interet  # Utilise le setter
 
+    @property
+    def solde(self):
+        return self._solde
+
+    @solde.setter
+    def solde(self, valeur):
+        if valeur < 0:
+            raise ValueError("Le solde ne peut pas être négatif.")
+        self._solde = valeur
+
+    @property
+    def taux_interet(self):
+        return self._taux_interet
+
+    @taux_interet.setter
+    def taux_interet(self, valeur):
+        if not (0 <= valeur <= 100):
+            raise ValueError("Le taux d'intérêt doit être entre 0 et 100.")
+        self._taux_interet = valeur
+
+    @property
+    def interets_annuels(self):
+        return self._solde * self._taux_interet / 100
+
+    def deposer(self, montant):
+        if montant < 0:
+            raise ValueError("Le montant à déposer doit être positif.")
+        self.solde += montant  # Utilise le setter
+
+    def retirer(self, montant):
+        if montant < 0:
+            raise ValueError("Le montant à retirer doit être positif.")
+        if montant > self._solde:
+            raise ValueError("Fonds insuffisants pour ce retrait.")
+        self.solde -= montant  # Utilise le setter
+
+    def __str__(self):
+        return (f"CompteBancaire(solde={self._solde}€, "
+                f"taux_interet={self._taux_interet}%, "
+                f"interets_annuels={self.interets_annuels}€)")
 
 # Tests
 if __name__ == "__main__":

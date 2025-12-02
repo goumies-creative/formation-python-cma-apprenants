@@ -14,7 +14,19 @@ print("=== EXERCICE 1 : CLASSE PERSONNE ===\n")
 
 # Votre code ici :
 class Personne:
-    pass  # Remplacez pass par votre code
+    def __init__(self, nom, prenom, age):
+        self.nom = nom
+        self.prenom = prenom
+        self.age = age
+
+    def se_presenter(self):
+        print(f"Bonjour, je m'appelle {self.prenom} {self.nom} et j'ai {self.age} ans")
+
+    def est_majeur(self):
+        return self.age >= 18
+
+    def __str__(self):
+        return f"{self.prenom} {self.nom}, {self.age} ans"
 
 
 # Tests

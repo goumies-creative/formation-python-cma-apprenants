@@ -1,0 +1,1 @@
+age = int("abc")  # ❌ Programme plante
